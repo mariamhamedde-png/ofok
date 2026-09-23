@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Scroller & HTML Extractor",
+  "version": "1.0",
+  "description": "Auto-scroll any webpage by an amount you set, stop anytime, then extract the page's HTML as a file.",
+  "permissions": ["activeTab", "scripting", "downloads"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

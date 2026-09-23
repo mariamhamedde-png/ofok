@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mariam Hamed — Digital Marketing Specialist & AI Director</title>
+<meta name="description" content="Mariam Ahmed Hamed — Digital Marketing Specialist, AI Director & AI Automation Specialist based in Alexandria, Egypt. Social media strategy, AI-driven content, workflow automation, and chatbot automation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="grain-overlay" aria-hidden="true"></div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<div class="progress-bar" aria-hidden="true"><div class="progress-bar__fill" id="progressFill"></div></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__logo">Mariam<span class="nav__logo-dot">.</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#home" class="nav__link active" data-nav>Home</a>
+      <a href="#about" class="nav__link" data-nav>About</a>
+      <a href="#services" class="nav__link" data-nav>Services</a>
+      <a href="#experience" class="nav__link" data-nav>Experience</a>
+      <a href="#projects" class="nav__link" data-nav>Projects</a>
+      <a href="#skills" class="nav__link" data-nav>Skills</a>
+      <a href="#contact" class="nav__link" data-nav>Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn--small btn--dark nav__cta">Book a Call</a>
+    <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero__blob hero__blob--1" aria-hidden="true"></div>
+  <div class="hero__blob hero__blob--2" aria-hidden="true"></div>
+  <div class="hero__grid-lines" aria-hidden="true"></div>
+
+  <div class="hero__inner">
+    <div class="hero__copy" data-reveal>
+      <p class="hero__eyebrow"><span class="script">hello, i'm</span></p>
+      <h1 class="hero__title">
+        <span class="hero__title-line">MARIAM</span>
+        <span class="hero__title-line hero__title-line--outline">HAMED</span>
+      </h1>
+      <p class="hero__role">
+        <span class="hero__role-item">Digital Marketing Specialist</span>
+        <span class="hero__role-sep">·</span>
+        <span class="hero__role-item">AI Director</span>
+        <span class="hero__role-sep">·</span>
+        <span class="hero__role-item">AI Automation Specialist</span>
+      </p>
+      <p class="hero__desc">
+        Results-driven digital marketer and AI director blending strategy, creative content, and
+        automation to build smarter digital experiences — based in Alexandria, Egypt.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary">
+          <span>Book a Call</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#projects" class="btn btn--ghost">View Work</a>
+      </div>
+      <div class="hero__socials">
+        <a href="https://www.linkedin.com/in/mariam-hamed-76b02b398/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.68H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45z"/></svg>
+        </a>
+        <a href="mailto:mariamhamedd.e@gmail.com" aria-label="Email" class="social-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 6.5C3 5.67 3.67 5 4.5 5h15c.83 0 1.5.67 1.5 1.5v11c0 .83-.67 1.5-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11z" stroke="currentColor" stroke-width="1.5"/><path d="M4 6l8 6.5L20 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__visual" data-reveal>
+      <div class="hero__photo-wrap" id="tiltCard">
+        <div class="hero__photo-glow" aria-hidden="true"></div>
+        <img src="assets/images/mariam-profile.jpg" alt="Mariam Ahmed Hamed" class="hero__photo" />
+        <div class="hero__badge hero__badge--top floaty">
+          <span class="hero__badge-dot"></span> Available for projects
+        </div>
+        <div class="hero__badge hero__badge--bottom floaty floaty--delay">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 7.2H22l-6 4.6 2.3 7.2-6.3-4.5L5.7 21l2.3-7.2-6-4.6h7.6L12 2z" fill="currentColor"/></svg>
+          Claude AI Certified
+        </div>
+      </div>
+      <div class="hero__location" data-reveal>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.1 7-11.4A7 7 0 0 0 5 9.6C5 14.9 12 21 12 21z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.3" stroke="currentColor" stroke-width="1.6"/></svg>
+        Alexandria, Egypt
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="hero__scroll" aria-label="Scroll to about">
+    <span class="hero__scroll-line"></span> Scroll
+  </a>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__intro" data-reveal>
+        <p class="eyebrow">Who I Am</p>
+        <h2 class="section-title">Where marketing strategy<br> meets <em class="script-accent">AI craft</em>.</h2>
+        <p class="about__text">
+          Results-driven Digital Marketing Specialist and AI Director, blending digital marketing,
+          creative content, and AI automation to build smarter digital experiences. Certified in
+          Claude AI, with hands-on expertise in AI-driven content, workflow automation, and
+          multi-platform customer service solutions.
+        </p>
+        <div class="about__tags">
+          <span class="tag">Digital Marketing</span>
+          <span class="tag">AI Automation</span>
+          <span class="tag">Creative Direction</span>
+          <span class="tag">Chatbot Design</span>
+        </div>
+      </div>
+
+      <div class="about__stats" data-reveal>
+        <div class="stat-card">
+          <span class="stat-card__num" data-count="4">0</span>
+          <span class="stat-card__label">AI & Automation<br>Projects</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num" data-count="3">0</span>
+          <span class="stat-card__label">Professional<br>Roles</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num" data-count="8">0</span>
+          <span class="stat-card__label">Certifications<br>Earned</span>
+        </div>
+        <div class="stat-card stat-card--dark">
+          <span class="stat-card__num" data-count="4">0</span>
+          <span class="stat-card__label">Years of Hands-on<br>Experience &amp; Volunteering</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="section services" id="services">
+  <div class="container">
+    <p class="eyebrow" data-reveal>What I Offer</p>
+    <h2 class="section-title" data-reveal>Services built for <em class="script-accent">modern brands</em></h2>
+
+    <div class="services__grid">
+      <article class="service-card" data-reveal>
+        <div class="service-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <h3 class="service-card__title">Social Media Management &amp; Content Strategy</h3>
+        <p class="service-card__desc">End-to-end management of social platforms — strategy, content planning, copywriting, and consistent brand communication across channels.</p>
+        <span class="service-card__num">01</span>
+      </article>
+
+      <article class="service-card" data-reveal>
+        <div class="service-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 7.2H22l-6 4.6 2.3 7.2-6.3-4.5L5.7 21l2.3-7.2-6-4.6h7.6L12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="service-card__title">AI-Driven Marketing Content &amp; Creative Direction</h3>
+        <p class="service-card__desc">Leading AI-powered creative concepts for digital and marketing projects — combining AI capabilities with clear marketing objectives.</p>
+        <span class="service-card__num">02</span>
+      </article>
+
+      <article class="service-card" data-reveal>
+        <div class="service-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 1 1 3.2 6.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M4 8v4h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="service-card__title">Workflow &amp; Marketing Automation</h3>
+        <p class="service-card__desc">Designing and building automated workflows for marketing and customer service — from content scheduling to full publishing pipelines.</p>
+        <span class="service-card__num">03</span>
+      </article>
+
+      <article class="service-card" data-reveal>
+        <div class="service-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v11H8l-4 4V4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="9" cy="9.5" r="1" fill="currentColor"/><circle cx="12" cy="9.5" r="1" fill="currentColor"/><circle cx="15" cy="9.5" r="1" fill="currentColor"/></svg>
+        </div>
+        <h3 class="service-card__title">Chatbot &amp; Customer Service Automation</h3>
+        <p class="service-card__desc">Building customer service chatbots across Instagram, Facebook/Messenger, and Telegram to automate and streamline customer communication.</p>
+        <span class="service-card__num">04</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="section experience" id="experience">
+  <div class="container">
+    <p class="eyebrow" data-reveal>Career Path</p>
+    <h2 class="section-title" data-reveal>Professional <em class="script-accent">Experience</em></h2>
+
+    <div class="timeline">
+      <div class="timeline__item" data-reveal>
+        <div class="timeline__dot"></div>
+        <div class="timeline__card">
+          <span class="timeline__date">February 2026 — Present</span>
+          <h3 class="timeline__role">Marketing Specialist / AI Director / AI Automation Specialist</h3>
+          <p class="timeline__company">The First — Real Estate Development &amp; Project Management · Alexandria, Egypt</p>
+          <ul class="timeline__list">
+            <li>Develop and execute social media marketing strategies and content plans</li>
+            <li>Manage social media platforms and oversee digital communication</li>
+            <li>Create marketing content and write engaging copy for different audiences and platforms</li>
+            <li>Develop AI-driven marketing content and lead AI creative direction for digital projects</li>
+            <li>Design and build automated workflows for marketing and customer service processes</li>
+            <li>Build customer service chatbots across Instagram, Facebook/Messenger, and Telegram</li>
+            <li>Developed an automated marketing scheduling workflow for content planning and publishing</li>
+            <li>Contribute to AI-powered website and application projects using Vercel, GitHub, and Supabase</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline__item" data-reveal>
+        <div class="timeline__dot"></div>
+        <div class="timeline__card">
+          <span class="timeline__date">9 Months</span>
+          <h3 class="timeline__role">Social Media Manager</h3>
+          <p class="timeline__company">Mahfouz Pharmacies</p>
+          <ul class="timeline__list">
+            <li>Managed social media platforms and digital communication</li>
+            <li>Created and managed social media content</li>
+            <li>Developed engaging copy and marketing content</li>
+            <li>Supported social media marketing activities and maintained consistent brand communication</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline__item" data-reveal>
+        <div class="timeline__dot"></div>
+        <div class="timeline__card">
+          <span class="timeline__date">6 Months</span>
+          <h3 class="timeline__role">Moderator / Sales</h3>
+          <p class="timeline__company">e-Study</p>
+          <ul class="timeline__list">
+            <li>Communicated with prospective students interested in studying in Poland</li>
+            <li>Handled inquiries and provided relevant information through online channels</li>
+            <li>Supported sales communication and follow-up with prospective students</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="volunteer" data-reveal>
+      <h3 class="volunteer__title">Volunteer &amp; Community Work</h3>
+      <div class="volunteer__grid">
+        <div class="volunteer__card">
+          <span class="volunteer__period">1 Year</span>
+          <h4>Social Media Marketing Volunteer</h4>
+          <p>Resala Charity, Alexandria</p>
+        </div>
+        <div class="volunteer__card">
+          <span class="volunteer__period">Oct 2024</span>
+          <h4>Logistics Volunteer</h4>
+          <p>Techne Summit Alexandria</p>
+        </div>
+        <div class="volunteer__card">
+          <span class="volunteer__period">Mar 2023</span>
+          <h4>Volunteer</h4>
+          <p>Bibliotheca Alexandrina</p>
+        </div>
+        <div class="volunteer__card">
+          <span class="volunteer__period">—</span>
+          <h4>Event Usher</h4>
+          <p>Four Seasons Hotel Alexandria</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section projects" id="projects">
+  <div class="container">
+    <p class="eyebrow" data-reveal>Selected Work</p>
+    <h2 class="section-title" data-reveal>AI &amp; Automation <em class="script-accent">Projects</em></h2>
+
+    <div class="projects__grid">
+      <article class="project-card" data-reveal>
+        <div class="project-card__glow"></div>
+        <span class="project-card__index">01</span>
+        <h3>Real Estate Customer Service Chatbot</h3>
+        <p>Built a customer service chatbot across Instagram, Facebook/Messenger, and Telegram to automate customer communication.</p>
+        <div class="project-card__tags"><span>Chatbot</span><span>Automation</span></div>
+      </article>
+
+      <article class="project-card" data-reveal>
+        <div class="project-card__glow"></div>
+        <span class="project-card__index">02</span>
+        <h3>Automated Marketing Scheduling Workflow</h3>
+        <p>Designed an automated workflow for scheduling and publishing marketing content.</p>
+        <div class="project-card__tags"><span>n8n</span><span>Workflow</span></div>
+      </article>
+
+      <article class="project-card" data-reveal>
+        <div class="project-card__glow"></div>
+        <span class="project-card__index">03</span>
+        <h3>AI-Driven Marketing Content</h3>
+        <p>Created AI-powered marketing content and creative concepts combining AI capabilities with marketing objectives.</p>
+        <div class="project-card__tags"><span>AI Content</span><span>Creative</span></div>
+      </article>
+
+      <article class="project-card" data-reveal>
+        <div class="project-card__glow"></div>
+        <span class="project-card__index">04</span>
+        <h3>AI-Powered Websites &amp; Applications</h3>
+        <p>Worked on AI-powered website and application projects using Vercel, GitHub, and Supabase.</p>
+        <div class="project-card__tags"><span>Vercel</span><span>Supabase</span><span>GitHub</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section skills" id="skills">
+  <div class="container">
+    <p class="eyebrow" data-reveal>Toolkit</p>
+    <h2 class="section-title" data-reveal>Skills &amp; <em class="script-accent">Tools</em></h2>
+
+    <div class="skills__block" data-reveal>
+      <h3 class="skills__label">Core Skills</h3>
+      <div class="pill-group">
+        <span class="pill">Digital Marketing</span>
+        <span class="pill">Social Media Management</span>
+        <span class="pill">Content Strategy &amp; Planning</span>
+        <span class="pill">Content Creation</span>
+        <span class="pill">Copywriting</span>
+        <span class="pill">AI Content Creation</span>
+        <span class="pill">AI Creative Direction</span>
+        <span class="pill">AI Automation</span>
+        <span class="pill">Workflow Design &amp; Automation</span>
+        <span class="pill">Chatbot Automation</span>
+        <span class="pill">Marketing Automation</span>
+        <span class="pill">Customer Service Automation</span>
+        <span class="pill">Creative Problem Solving</span>
+      </div>
+    </div>
+
+    <div class="skills__tools-grid">
+      <div class="tool-group" data-reveal>
+        <h4>AI</h4>
+        <div class="pill-group"><span class="pill pill--outline">ChatGPT</span><span class="pill pill--outline">Claude</span><span class="pill pill--outline">Gemini</span></div>
+      </div>
+      <div class="tool-group" data-reveal>
+        <h4>Automation</h4>
+        <div class="pill-group"><span class="pill pill--outline">n8n</span><span class="pill pill--outline">Workflow Automation</span></div>
+      </div>
+      <div class="tool-group" data-reveal>
+        <h4>Social Media &amp; Meta</h4>
+        <div class="pill-group"><span class="pill pill--outline">Meta Business Suite</span><span class="pill pill--outline">Meta for Developers</span><span class="pill pill--outline">Instagram</span><span class="pill pill--outline">Facebook</span><span class="pill pill--outline">Messenger</span><span class="pill pill--outline">Telegram</span></div>
+      </div>
+      <div class="tool-group" data-reveal>
+        <h4>Web &amp; Development</h4>
+        <div class="pill-group"><span class="pill pill--outline">Vercel</span><span class="pill pill--outline">GitHub</span><span class="pill pill--outline">Supabase</span></div>
+      </div>
+      <div class="tool-group" data-reveal>
+        <h4>Design &amp; Content</h4>
+        <div class="pill-group"><span class="pill pill--outline">Canva</span><span class="pill pill--outline">AI Creative Tools</span></div>
+      </div>
+      <div class="tool-group" data-reveal>
+        <h4>Microsoft Office</h4>
+        <div class="pill-group"><span class="pill pill--outline">Word</span><span class="pill pill--outline">Excel</span><span class="pill pill--outline">PowerPoint</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EDUCATION & CERTIFICATIONS ===== -->
+<section class="section edu" id="education">
+  <div class="container">
+    <div class="edu__grid">
+      <div data-reveal>
+        <p class="eyebrow">Background</p>
+        <h2 class="section-title">Education &amp; <em class="script-accent">Certifications</em></h2>
+
+        <div class="edu__list">
+          <div class="edu__item">
+            <h4>Faculty of Business — English Section</h4>
+            <p>Alexandria University</p>
+          </div>
+          <div class="edu__item">
+            <h4>Digital Marketing Diploma</h4>
+            <p>Ministry of Communications and Information Technology (MCIT) · 93 Hours</p>
+          </div>
+        </div>
+
+        <h3 class="skills__label edu__cert-title">Certifications</h3>
+        <ul class="cert-list">
+          <li><span class="cert-list__check">✓</span>Claude AI Certification</li>
+          <li><span class="cert-list__check">✓</span>AI Automation Course</li>
+          <li><span class="cert-list__check">✓</span>Digital Marketing Diploma — MCIT, 93 Hours</li>
+          <li><span class="cert-list__check">✓</span>Microsoft Office Specialist (MOS) — 2024</li>
+          <li><span class="cert-list__check">✓</span>Financial Literacy and Entrepreneurial Skills — CIB &amp; LinkedIn, 2024</li>
+          <li><span class="cert-list__check">✓</span>Data Literacy — SAS, 2024</li>
+          <li><span class="cert-list__check">✓</span>Graphic Design Diploma — Dolap Academy, 2024</li>
+          <li><span class="cert-list__check">✓</span>Career Guidance — UNICEF &amp; Ministry of Youth, 2020</li>
+        </ul>
+      </div>
+
+      <div class="languages-card" data-reveal>
+        <h3 class="skills__label">Languages</h3>
+        <div class="lang-item">
+          <div class="lang-item__top"><span>Arabic</span><span>Native</span></div>
+          <div class="lang-bar"><div class="lang-bar__fill" style="width:100%"></div></div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-item__top"><span>English</span><span>Intermediate (B1)</span></div>
+          <div class="lang-bar"><div class="lang-bar__fill" style="width:55%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section contact" id="contact">
+  <div class="contact__blob" aria-hidden="true"></div>
+  <div class="container">
+    <div class="contact__grid">
+      <div class="contact__info" data-reveal>
+        <p class="eyebrow eyebrow--light">Let's Work Together</p>
+        <h2 class="section-title section-title--light">Book a call, <em class="script-accent">let's talk</em></h2>
+        <p class="contact__desc">Have a project in mind? Tell me a bit about it and I'll get back to you.</p>
+
+        <div class="contact__details">
+          <a href="mailto:mariamhamedd.e@gmail.com" class="contact__detail">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 6.5C3 5.67 3.67 5 4.5 5h15c.83 0 1.5.67 1.5 1.5v11c0 .83-.67 1.5-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11z" stroke="currentColor" stroke-width="1.5"/><path d="M4 6l8 6.5L20 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            mariamhamedd.e@gmail.com
+          </a>
+          <a href="tel:01097732717" class="contact__detail">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 5c0-1 1-2 2-2h1.2c.5 0 .9.3 1 .8l1 3.4c.1.4 0 .9-.4 1.2L7.4 9.6c1 2.3 2.9 4.2 5.2 5.2l1.2-1.4c.3-.4.8-.5 1.2-.4l3.4 1c.5.1.8.5.8 1V17c0 1-1 2-2 2h-1C9.9 19 4 13.1 4 6V5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            01097732717
+          </a>
+          <a href="https://www.linkedin.com/in/mariam-hamed-76b02b398/" target="_blank" rel="noopener" class="contact__detail">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.68H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45z"/></svg>
+            linkedin.com/in/mariam-hamed
+          </a>
+          <div class="contact__detail contact__detail--static">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.1 7-11.4A7 7 0 0 0 5 9.6C5 14.9 12 21 12 21z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.3" stroke="currentColor" stroke-width="1.6"/></svg>
+            Alexandria, Egypt
+          </div>
+        </div>
+      </div>
+
+      <form class="booking-form" id="bookingForm" data-reveal novalidate>
+        <div class="booking-form__row">
+          <div class="field">
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="firstName" required autocomplete="given-name">
+            <span class="field__error">Please enter your first name</span>
+          </div>
+          <div class="field">
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" name="lastName" required autocomplete="family-name">
+            <span class="field__error">Please enter your last name</span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+          <span class="field__error">Please enter a valid email</span>
+        </div>
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" required autocomplete="tel">
+          <span class="field__error">Please enter your phone number</span>
+        </div>
+        <button type="submit" class="btn btn--primary booking-form__submit">
+          <span>Book</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+        <div class="booking-form__success" id="bookingSuccess" role="status" aria-live="polite">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/><path d="M7.5 12.5l3 3 6-6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Your request has been received successfully. I'll be in touch soon!
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#home" class="nav__logo">Mariam<span class="nav__logo-dot">.</span></a>
+      <p>Digital Marketing Specialist · AI Director · AI Automation Specialist</p>
+    </div>
+    <div class="footer__links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer__socials">
+      <a href="https://www.linkedin.com/in/mariam-hamed-76b02b398/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.68H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45z"/></svg>
+      </a>
+      <a href="mailto:mariamhamedd.e@gmail.com" aria-label="Email" class="social-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 6.5C3 5.67 3.67 5 4.5 5h15c.83 0 1.5.67 1.5 1.5v11c0 .83-.67 1.5-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11z" stroke="currentColor" stroke-width="1.5"/><path d="M4 6l8 6.5L20 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+    <p class="footer__copy">© 2026 Mariam Ahmed Hamed. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M12 5l-6 6M12 5l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
