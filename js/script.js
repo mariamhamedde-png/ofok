@@ -1,6 +1,16 @@
 (() => {
   'use strict';
 
+  /* ---------- Supabase ----------
+     Public URL + anon/publishable key — safe to expose client-side.
+     Access is restricted entirely by Postgres Row Level Security
+     (contact_submissions only allows INSERT for the anon role). */
+  const SUPABASE_URL = 'https://tgsrlkdwhqglgjznmvpp.supabase.co';
+  const SUPABASE_ANON_KEY = 'sb_publishable_zP46DZffhl2EVcMEOju3zQ_DDATixqt';
+  const supabaseClient = window.supabase
+    ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+    : null;
+
   /* ---------- Nav: scrolled state + active link + mobile menu ---------- */
   const nav = document.getElementById('nav');
   const navBurger = document.getElementById('navBurger');
@@ -133,13 +143,34 @@
   /* ---------- Booking form ---------- */
   const form = document.getElementById('bookingForm');
   const successMsg = document.getElementById('bookingSuccess');
+  const errorMsg = document.getElementById('bookingError');
+  const errorText = document.getElementById('bookingErrorText');
+  const submitBtn = document.getElementById('bookingSubmit');
+
   if (form) {
     const phonePattern = /^[0-9+()\-\s]{7,20}$/;
+    let isSubmitting = false;
 
-    form.addEventListener('submit', (e) => {
+    function setLoading(loading) {
+      isSubmitting = loading;
+      submitBtn.disabled = loading;
+      submitBtn.classList.toggle('is-loading', loading);
+    }
+
+    function showError(message) {
+      errorText.textContent = message;
+      errorMsg.classList.add('show');
+      setTimeout(() => errorMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
+    }
+
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      let valid = true;
+      if (isSubmitting) return;
 
+      successMsg.classList.remove('show');
+      errorMsg.classList.remove('show');
+
+      let valid = true;
       const fields = ['firstName', 'lastName', 'email', 'phone'];
       fields.forEach((name) => {
         const input = form.elements[name];
@@ -160,24 +191,41 @@
         }
       });
 
-      if (!valid) {
-        successMsg.classList.remove('show');
+      if (!valid) return;
+
+      if (!supabaseClient) {
+        showError('Booking is temporarily unavailable. Please email me directly instead.');
         return;
       }
 
-      successMsg.classList.add('show');
-      form.reset();
-      fields.forEach((name) => form.elements[name].classList.remove('touched'));
+      setLoading(true);
 
-      setTimeout(() => {
-        successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }, 100);
+      try {
+        const { error } = await supabaseClient.from('contact_submissions').insert({
+          first_name: form.elements.firstName.value.trim(),
+          last_name: form.elements.lastName.value.trim(),
+          email: form.elements.email.value.trim(),
+          phone: form.elements.phone.value.trim(),
+        });
+
+        if (error) throw error;
+
+        successMsg.classList.add('show');
+        form.reset();
+        fields.forEach((name) => form.elements[name].classList.remove('touched'));
+        setTimeout(() => successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 100);
+      } catch (err) {
+        showError('Your request could not be sent right now. Please try again in a moment, or email me directly.');
+      } finally {
+        setLoading(false);
+      }
     });
 
     form.querySelectorAll('input').forEach((input) => {
       input.addEventListener('blur', () => input.classList.add('touched'));
       input.addEventListener('input', () => {
         if (input.classList.contains('touched')) input.classList.remove('touched');
+        errorMsg.classList.remove('show');
       });
     });
   }
